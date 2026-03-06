@@ -24,13 +24,19 @@
         <p>When using the img tag and srcset attribute, you are essentially serving a different sized copy of the same image depending on the user's viewport width. This is called resolution switching, and you can accomplish it using the srcset and sizes attributes. When you use the srcset and sizes attributes on an img element, you are giving the browser necessary information to make a decision what image to request and serve to the user.</p>
         <img
             src="images/mountain-768.jpg"
-            srtset="
+            srcset="
                 images/mountain-412.jpg 412w,
                 images/mountain-768.jpg 768w,
                 images/mountain-1200.jpg 1200w"
             sizes="(max-width: 768px) 100vw, 768px"
             alt="view of mountain lake"
             id="mountain">
+    </section>
+
+    <section id="css-back">
+        <h2>The CSS Background Image</h2>
+        <p>The CSS background image property can be used alongside media queries to serve different images at different screen sizes. This can be very helpful if the image being used is decorative or part of a layout, not important or crucial to the content.</p>
+        <div id="back-container"></div>
     </section>
     
     <script src="js/main.js"></script>
