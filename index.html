@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <title>Responsive Images</title>
-    <link rel="stylsheet" href="css/grid.css">
-    <link rel="stylsheet" href="css/main.css">
 </head>
 <body>
+    <h1 class="hidden">Working with Responsive Images</h1>
+
+    <section class="grid-con center-grid-con" id="pic-element">
+        <h2 class="col-span-full">The Picture Element</h2>
+        <p class="col-span-full">The HTML picture element is a container used to specify multiple source elements for a specific img contained in it. When using the picture element, you are strictly telling browser which image to use on different viewport widths. This can be very useful when one is going in more of an artistic direction.</p>
+        <picture class="col-span-full">
+            <source media="(min-width: 768px)" srcset="images/bmw2.jpg" id="bmw2">
+            <img src="images/bmw1.jpg" alt="BMW Z4 from behind" id="bmw1">
+        </picture>
+    </section>
     
     <script src="js/main.js"></script>
 </body>
